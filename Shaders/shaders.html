@@ -12,7 +12,7 @@
 <body>
 <script id="vertexShader" type="x-shader/x-vertex">
 	void main() {
-		gl_Position = projectionMatrix * modelViewMatrix * vec4(position,0.5);
+		gl_Position = projectionMatrix * modelViewMatrix * vec4(position.x+10.0, position.y, position.z+5.0, 1.0);
 	}
 </script>
 <script id="fragmentShader" type="x-shader/x-fragment">
